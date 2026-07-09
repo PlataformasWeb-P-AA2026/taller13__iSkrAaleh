@@ -1,0 +1,29 @@
+{% extends "master.html" %}
+
+{% block title %}Lista de Edificios{% endblock %}
+
+{% block content %}
+    <section class="table-section">
+      <h2>Listado de Edificios</h2>
+      <table>
+        <thead>
+          <tr>
+            <th>Nombre</th>
+            <th>Dirección</th>
+            <th>Ciudad</th>
+            <th>Tipo</th>
+          </tr>
+        </thead>
+        <tbody>
+          {% for edificio in edificios %}
+          <tr>
+            <td>{{ edificio.nombre }}</td>
+            <td>{{ edificio.direccion }}</td>
+            <td>{{ edificio.ciudad }}</td>
+            <td><span class="yellow">{{ edificio.tipo }}</span></td>
+          </tr>
+          {% endfor %}
+        </tbody>
+      </table>
+    </section>
+{% endblock %}

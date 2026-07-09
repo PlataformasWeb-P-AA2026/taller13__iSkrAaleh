@@ -1,0 +1,15 @@
+{% extends "master.html" %}
+
+{% block title %}Inicio{% endblock %}
+
+{% block content %}
+    <section class="hero">
+      <div class="hero-info">
+        <h1>Bienvenido al sistema de gestion</h1>
+        <div class="hero-buttons">
+          <a href="{% url 'listar_edificios' %}" class="btn primary">Ver edificios</a>
+          <a href="{% url 'listar_departamentos' %}" class="btn secondary">Ver departamentos</a>
+        </div>
+      </div>
+    </section>
+{% endblock %}

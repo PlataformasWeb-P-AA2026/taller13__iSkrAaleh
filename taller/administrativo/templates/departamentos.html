@@ -1,0 +1,29 @@
+{% extends "master.html" %}
+
+{% block title %}Lista de Departamentos{% endblock %}
+
+{% block content %}
+<section class="table-section">
+  <h2>Listado de Departamentos</h2>
+  <table>
+    <thead>
+      <tr>
+        <th>Propietario</th>
+        <th>Costo</th>
+        <th>Cuartos</th>
+        <th>Edificio</th>
+      </tr>
+    </thead>
+    <tbody>
+      {% for dep in departamentos %}
+      <tr>
+        <td>{{ dep.nombre_propietario }}</td>
+        <td>${{ dep.costo }}</td>
+        <td>{{ dep.numero_cuartos }}</td>
+        <td><span class="yellow">{{ dep.edificio.nombre }}</span></td>
+      </tr>
+      {% endfor %}
+    </tbody>
+  </table>
+</section>
+{% endblock %}
