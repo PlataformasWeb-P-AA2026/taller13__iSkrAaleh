@@ -56,10 +56,17 @@ Nota: Un departamento pertenece a un edificio
 ### Tecnologías y herramientas:
 
 - Base de datos Sqlite / Postgres (agregar en el readme, evidencias de las tablas en ambas BD)
+  <img width="1913" height="1008" alt="pos_sql" src="https://github.com/user-attachments/assets/2abc5d1a-08b9-4bae-8798-2e5e585664c0" />
 - Lenguaje Python
 - Framework Django
 - Django-Rest
 - Flask
+- <img width="1913" height="1008" alt="Funcionamiento" src="https://github.com/user-attachments/assets/e02dd9a9-e6c7-48d3-bbb1-4c0fa2044e5f" />
+<img width="1653" height="777" alt="funcionamientodelapideflask" src="https://github.com/user-attachments/assets/720f3683-ab8a-48e7-8aaf-0f2a6a58c5de" />
+<img width="1913" height="1008" alt="sqlite" src="https://github.com/user-attachments/assets/36377cab-defd-43fd-b4d6-381028ab1052" />
+
+
+
 
 
 ### Tarea a realizar:
