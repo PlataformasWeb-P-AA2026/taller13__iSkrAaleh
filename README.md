@@ -1,4 +1,6 @@
-#Alex Serrano
+# Alex Serrano
+
+## Lo de flash se trabajo dentro de la misma carpeta consumo_api
 
 # taller13
 

@@ -1,10 +1,9 @@
-{% extends "master.html" %}
-
-{% block title %}Lista de Edificios{% endblock %}
+{% extends 'master.html' %}
 
 {% block content %}
     <section class="table-section">
       <h2>Listado de Edificios</h2>
+
       <table>
         <thead>
           <tr>
@@ -14,6 +13,7 @@
             <th>Tipo</th>
           </tr>
         </thead>
+
         <tbody>
           {% for edificio in edificios %}
           <tr>

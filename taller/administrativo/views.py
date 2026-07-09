@@ -11,3 +11,17 @@ def listar_edificios(request):
 def listar_departamentos(request):
     departamentos = Departamento.objects.all()
     return render(request, 'departamentos.html', {'departamentos': departamentos})
+
+from rest_framework import viewsets
+from rest_framework import permissions
+from administrativo.serializers import EdificioSerializer, DepartamentoSerializer
+
+class EdificioViewSet(viewsets.ModelViewSet):
+    queryset = Edificio.objects.all()
+    serializer_class = EdificioSerializer
+    permission_classes = [permissions.IsAuthenticated]
+
+class DepartamentoViewSet(viewsets.ModelViewSet):
+    queryset = Departamento.objects.all()
+    serializer_class = DepartamentoSerializer
+    permission_classes = [permissions.IsAuthenticated]
